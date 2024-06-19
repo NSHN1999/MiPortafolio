@@ -1,0 +1,57 @@
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+p a{
+    display: inline;
+}
+
+image, picture, video, iframe, figure{
+    max-width: 100%;
+    display: block;
+}
+
+form, input, textarea, select, button, label {
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}

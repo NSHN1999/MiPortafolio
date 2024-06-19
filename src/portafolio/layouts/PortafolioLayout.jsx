@@ -1,0 +1,84 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
+import { MenuNavegacion } from "../components";
+//ESTILOS
+import clases from "../styles/PortafolioLayout.module.css";
+
+export const PortafolioLayout = ( {children} ) => {
+
+    return (
+        <div className={`${clases.layout}`}>
+            <aside className={`${clases.layout__aside}`}>
+                <section className={`${clases.aside__userInfo}`}>
+
+                    {/**Información del usuario */}
+                    <div className={`${clases.userInfo__general}`}>
+                        <div className={`${clases.userInfo__containerImagen}`}>
+                            <img 
+                                src="../../../assets/img/images.jpg" 
+                                className={`${clases.userInfo__image}`}
+                                alt="Foto de perfil del Usuario"
+                            />
+                        </div>
+                        <h2 className={`${clases.userInfo__name}`}>Nicolás Hernández</h2>
+                        <h4 className={`${clases.userInfo__job}`}>Desarrollador Web Front-End</h4>
+                    </div>
+
+                    {/**Menu de navegación */}
+                    <MenuNavegacion/>
+
+                    {/**Links a redes sociales */}
+                    <div className={`${clases.userInfo__userLinks}`}>
+                        <ul className={`${clases.userLinks__social}`}>
+                            <li className={`${clases.social__option}`}>
+                                <a 
+                                    href={`https://www.Instagram.com/SKT_Nicotina`}
+                                    target="_blank"
+                                    className={`${clases.social__link}`}    
+                                >
+                                    <FontAwesomeIcon className={`${clases.social__icon}`} icon={faInstagram}/>
+                                </a>
+                            </li>
+                            <li className={`${clases.social__option}`}>
+                                <a 
+                                    href={`https://www.Linkedin.com/in/NicoDev1999`}
+                                    target="_blank"
+                                    className={`${clases.social__link}`}    
+                                >
+                                    <FontAwesomeIcon className={`${clases.social__icon}`} icon={faLinkedin}/>
+                                </a>
+                            </li>
+                            <li className={`${clases.social__option}`}>
+                                <a 
+                                    href={`https://www.Github.com/NSHN1999`}
+                                    target="_blank"
+                                    className={`${clases.social__link}`}    
+                                >
+                                    <FontAwesomeIcon className={`${clases.social__link}`} icon={faGithub}/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    {/**Boton descargar CV */}
+                    <div className={`${clases.userInfo__buttons}`}>
+                        <a href="#" className={`${clases.userInfo__btn}`}>Descargar CV</a>
+                    </div>
+
+                    {/**Footer */}
+                    <footer className={`${clases.userInfo__footer}`}>
+                        &copy; 2024 Nicolas Hernandez WEB
+                    </footer>
+
+                </section>
+            </aside>
+
+            <main className={`${clases.layout__content}`}>
+                <section className={`${clases.content_page}`}>
+                    {children}
+                </section>
+            </main>
+        </div>
+    );
+};
