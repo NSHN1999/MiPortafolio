@@ -1,0 +1,162 @@
+
+/*SCROLL CHROME*/
+.content__page::-webkit-scrollbar{
+    width: 25px;
+    background: transparent;
+}
+
+.content__page::-webkit-scrollbar-thumb{
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+.content__page:hover::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 0 10px var(--color-scrollbar);
+}
+
+.content__page:hover::-webkit-scrollbar-thumb:hover{
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--color-secondary);
+}
+
+.content__page::-webkit-scrollbar-track{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*ESTILOS DEL CONTENIDO*/
+.content__page{
+    min-height: 100%;
+    background-color: var(--color-principal);
+    border-radius: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__about{
+    height: 100%;
+    min-height: 100%;
+    overflow: scroll;
+    padding: 6rem;
+    padding-right: 3rem;
+    display: block;
+}
+
+/*ESTILOS ABOUT ME*/
+.about__header{
+    display: inline-block;
+    margin-bottom: 4.5rem;
+}
+
+.about__title{
+    font-size: 3.2rem;
+    position: relative;
+}
+
+.about__title::after{
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -25px;
+    width: 50px;
+    height: 30px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 1px, transparent 0px, transparent 100%);
+    background-size: 6px 6px;
+    opacity: 0.5;
+}
+
+.title__color{
+    color: var(--color-secondary);
+}
+
+/*SECCION INFORMACION PERSONAL*/
+.about__personalInfo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.personalInfo__bio{
+    flex-basis: 55%;
+}
+
+.personalInfo__description{
+    font-size: 1.5rem;
+    line-height: 2.5rem;   
+}
+
+.personalInfo__data{
+    flex-basis: 44%;
+    padding: 0 1.5rem;
+}
+
+.personalInfo__option{
+    margin-bottom: 1rem;
+}
+
+.personalInfo__title{
+    margin-right: 0.5rem;
+    color: var(--color-secondary);
+    font-weight: 600;
+}
+
+/*SECCION SERVICIOS*/
+.about__services{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.services__header{
+    display: inline-block;
+    padding: 1.2rem;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.services__title{
+    font-size: 2.1rem;
+}
+
+.services__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.services__service{
+    flex-basis: calc(50% - 3rem);
+    margin-right: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.services__title::after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 30px;
+    height: 20px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 1px, transparent 0px, transparent 100%);
+    background-size: 6px 6px;
+    opacity: 0.5;
+}
+
+.icon__realIcon{
+    color: var(--color-secondary);
+    font-size: 3.8rem;
+}
+
+.service__title{
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+}
+
+.service__description{
+    font-size: 1.5rem;
+    text-align: justify;
+}

@@ -75,9 +75,9 @@ export const PortafolioLayout = ( {children} ) => {
             </aside>
 
             <main className={`${clases.layout__content}`}>
-                <section className={`${clases.content_page}`}>
-                    {children}
-                </section>
+
+                {children}
+                
             </main>
         </div>
     );

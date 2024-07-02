@@ -1,9 +1,13 @@
 import { PortafolioLayout } from "../layouts/PortafolioLayout";
+/*ESTILOS*/
+import clases from "../styles/EstudiosPage.module.css";
 
 export const EstudiosPage = () => {
     return (
         <PortafolioLayout>
-            <h1>Estudios Page</h1>
+            <section className={`${clases.content__page} ${clases.content__estudios}`}>
+                
+            </section>
         </PortafolioLayout>
     );
 };

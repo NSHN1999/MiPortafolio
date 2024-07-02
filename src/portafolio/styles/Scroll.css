@@ -1,0 +1,32 @@
+
+/*SCROLL FIREFOX*/
+.content__page{
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-scrollbar) transparent;
+}
+
+/*SCROLL CHROME*/
+.content__page::-webkit-scrollbar{
+    width: 25px;
+    background: transparent;
+}
+
+.content__page::-webkit-scrollbar-thumb{
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+.content__page:hover::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 0 10px var(--color-scrollbar);
+}
+
+.content__page:hover::-webkit-scrollbar-thumb:hover{
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--color-secondary);
+}
+
+.content__page::-webkit-scrollbar-track{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}

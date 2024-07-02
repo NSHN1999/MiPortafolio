@@ -153,12 +153,28 @@ body{
     border-radius: 0 10rem 10rem 0;
 }
 
-.content_page{
-    min-height: 100%;
-    background-color: var(--color-principal);
-    border-radius: 3.2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/*SCROLL CHROME*/
+.layout__aside::-webkit-scrollbar{
+    width: 25px;
+    background: var(--color-secondary);
+}
+
+.layout__aside::-webkit-scrollbar-thumb{
+    border: 10px solid transparent;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+.layout__aside:hover::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 0 10px var(--color-principal);
+}
+
+.layout__aside:hover::-webkit-scrollbar-thumb:hover{
+    border: 8px solid transparent;
+    box-shadow: inset 0 0 0 10px var(--color-principal);
+}
+
+.layout__aside::-webkit-scrollbar-track{
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
