@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import { MenuNavegacion } from "../components";
+import { handleArchivoPdf } from "../helpers/handleArchivosPdf";
 //ESTILOS
 import clases from "../styles/PortafolioLayout.module.css";
 
@@ -62,7 +63,10 @@ export const PortafolioLayout = ( {children} ) => {
                     </div>
 
                     {/**Boton descargar CV */}
-                    <div className={`${clases.userInfo__buttons}`}>
+                    <div 
+                        onClick={() => handleArchivoPdf("/assets/pdfs/CVNicolasHernandez.pdf")} 
+                        className={`${clases.userInfo__buttons}`}
+                    >
                         <a href="#" className={`${clases.userInfo__btn}`}>Descargar CV</a>
                     </div>
 
