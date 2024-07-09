@@ -36,7 +36,7 @@
     align-items: center;
 }
 
-.content__estudios{
+.content__blog{
     height: 100%;
     min-height: 100%;
     overflow: scroll;
@@ -47,7 +47,7 @@
 
 /*SECCION ESTUDIOS*/
 
-.estudios__header{
+.blog__header{
     display: inline-block;
     margin-bottom: 4.5rem;
 }
@@ -68,4 +68,3 @@
     background-size: 6px 6px;
     opacity: 0.5;
 }
-

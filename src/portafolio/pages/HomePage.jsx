@@ -1,14 +1,11 @@
-import { PortafolioLayout } from "../layouts";
-
+//ESTILOS
 import clases from "../styles/HomePage.module.css";
 
 export const HomePage = () => {
     return (
-        <PortafolioLayout>
-            <section className={`${clases.content_page}`}>
-                <h1 className={`${clases.page__name}`}>Nicolás Hernández</h1>
-                <h2 className={`${clases.page__job}`}>Desarrollador Web</h2>
-            </section>
-        </PortafolioLayout>
+        <section className={`${clases.content_page}`}>
+            <h1 className={`${clases.page__name}`}>Nicolás Hernández</h1>
+            <h2 className={`${clases.page__job}`}>Desarrollador Web</h2>
+        </section>
     );
 };

@@ -1,8 +1,8 @@
-# Portafolio
+## Portafolio
 
-Portafolio de trabajo
+Portafolio profesional
 
 ### Tecnologias
-* HTML
-* React JS
-* CSS
+- HTML
+- React JS
+- CSS

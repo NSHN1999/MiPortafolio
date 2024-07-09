@@ -1,12 +1,15 @@
+//IMPORTACIONES ICONOS FONTAWESOME
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-
+//iMPORTACIONES LOCALES
 import { MenuNavegacion } from "../components";
-import { handleArchivoPdf } from "../helpers/handleArchivosPdf";
+import { handleArchivoPdf } from "../helpers";
 //ESTILOS
 import clases from "../styles/PortafolioLayout.module.css";
 
 export const PortafolioLayout = ( {children} ) => {
+
+    console.log("Layout redibujado")
 
     return (
         <div className={`${clases.layout}`}>

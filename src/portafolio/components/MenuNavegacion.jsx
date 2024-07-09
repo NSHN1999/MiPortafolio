@@ -1,5 +1,7 @@
+//IMPORTACION DE ICONOS 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faBriefcase, faEnvelope, faGraduationCap, faHouse, faUser } from "@fortawesome/free-solid-svg-icons";
+//IMPORTACION REACT-ROUTER
 import { Link } from 'react-router-dom';
 //ESTILOS
 import clases from "../styles/MenuNavegacion.module.css";
