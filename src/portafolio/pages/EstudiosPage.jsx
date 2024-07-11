@@ -1,3 +1,4 @@
+import { handleArchivoPdf } from "../helpers";
 /*ESTILOS*/
 import clases from "../styles/EstudiosPage.module.css";
 
@@ -7,29 +8,30 @@ export const EstudiosPage = () => {
         <section className={`${clases.content__page} ${clases.content__estudios}`}>
 
             <header className={`${clases.estudios__header}`}>
-                <h1 className={`${clases.header__title}`}>Formación</h1>
+                <h1 className={`${clases.header__title}`}>Curriculum</h1>
             </header>
 
             <div className={`${clases.resumen__container}`}>
 
                 <section className={`${clases.resumen__left}`}>
+
                     <header className={`${clases.resumen__subHeader}`}>
                         <h2 className={`${clases.resumen__subTitle}`}>Formación</h2>
                     </header>
 
                     <div className={`${clases.resumen__timelines}`}>
-                        <article className={`${clases.timeline__item}`}>
+                        <article className={`${clases.timelines__timeline}`}>
                             <header className={`${clases.timeline__header}`}>
-                                <h4 className={`${clases.timeline__year}`}>2022 - 2024</h4>
+                                <h4 className={`${clases.timeline__year}`}>2024</h4>
                                 <span className={`${clases.timeline__company}`}>Instituto Profesional Duoc UC</span>
                             </header>
 
                             <div className={`${clases.timeline__divide}`}></div>
 
                             <div className={`${clases.timeline__description}`}>
-                                <h3 className={`${clases.timeline__title}`}>Analista Programador<span>&#40;carrera afin&#41;</span></h3>
-                                <p className={`${clases.timeline__description}`}>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque facere maiores ut animi quibusdam enim ad quo asperiores possimus inventore, maxime mollitia. Assumenda eius culpa reprehenderit! Ullam illum quam quaerat!
+                                <h3 className={`${clases.timeline__title}`}>Analista Programador</h3>
+                                <p className={`${clases.timeline__text}`}>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque facere maiores ut animi quibusdam enim ad quo asperiores possimus inventore, maxime mollitia.
                                 </p>
                             </div>
                         </article>
@@ -40,7 +42,7 @@ export const EstudiosPage = () => {
                 <section className={`${clases.resumen__right}`}>
 
                     <header className={`${clases.resumen__subHeader}`}>
-                        <h2 className={`${clases.resumen__subTitle}`}>Habilidades de codigo</h2>
+                        <h2 className={`${clases.resumen__subTitle}`}>Habilidades de <span className={`${clases.title__color}`}>codigo</span></h2>
                     </header>
 
                     <div className={`${clases.resumen__skills}`}>
@@ -71,7 +73,7 @@ export const EstudiosPage = () => {
                     </div>
 
                     <header className={`${clases.resumen__subHeader}`}>
-                        <h2 className={`${clases.resumen__subTitle}`}>Frameworks y Librerias</h2>
+                        <h2 className={`${clases.resumen__subTitle}`}>Frameworks y <span className={`${clases.title__color}`}>Librerias</span></h2>
                     </header>
 
                     <div className={`${clases.resumen__skills}`}>
@@ -121,6 +123,7 @@ export const EstudiosPage = () => {
                         </ul>
                     </div>
                 </section>
+                
             </div>
 
             <div className={`${clases.resumen__certificados}`}>
@@ -131,7 +134,7 @@ export const EstudiosPage = () => {
                 <section className={`${clases.certificates__container}`}>
                     <article className={`${clases.certificates__certificate}`}>
                         <div className={`${clases.certificate__logo}`}>
-                            <img src="#" className={`${clases.certificate__img}`}/>
+                            <button onClick={() => handleArchivoPdf("/assets/pdfs/CertificadoModuloDuocUC.pdf")}><img src="#" className={`${clases.certificate__img}`}/></button>
                         </div>
                         <div className={`${clases.certificate__content}`}>
                             <h4 className={`${clases.certificate__title}`}>Modulo DuocUC</h4>
@@ -142,7 +145,7 @@ export const EstudiosPage = () => {
 
                     <article className={`${clases.certificates__certificate}`}>
                         <div className={`${clases.certificate__logo}`}>
-                            <img src="#" className={`${clases.certificate__img}`}/>
+                            <button onClick={() => handleArchivoPdf("/assets/pdfs/CertificadoPracticaProfesional.pdf")}><img src="#" className={`${clases.certificate__img}`}/></button>
                         </div>
                         <div className={`${clases.certificate__content}`}>
                             <h4 className={`${clases.certificate__title}`}>Practica Profesional DuocUC</h4>
@@ -153,7 +156,7 @@ export const EstudiosPage = () => {
 
                     <article className={`${clases.certificates__certificate}`}>
                         <div className={`${clases.certificate__logo}`}>
-                            <img src="#" className={`${clases.certificate__img}`}/>
+                            <button onClick={() => handleArchivoPdf("/assets/pdfs/CertificadoUdemy.pdf")}><img src="#" className={`${clases.certificate__img}`}/></button>
                         </div>
                         <div className={`${clases.certificate__content}`}>
                             <h4 className={`${clases.certificate__title}`}>Aprende JavaScript ES9, HTML, CSS3 y NodeJS</h4>

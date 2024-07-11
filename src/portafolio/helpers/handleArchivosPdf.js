@@ -1,18 +1,38 @@
 
-let archivoPdfAbierto = false;
-let archivoPdfVentana = window;
+let nombresArchivos = [];
+let estadoArchivos = [];
 
 export const handleArchivoPdf = ( ubicacion ) => {
+    //Se valida que exista ubicacion(nombre del archivo) y si no existe guarda la ubicacion en el arreglo nombresArchivos.
+    if(!nombresArchivos.includes(ubicacion)) nombresArchivos.push(ubicacion);
+    //Se almacena el indice de la ubicacion en una variable para darle diferentes usos.
+    let indiceArchivo = nombresArchivos.indexOf(ubicacion);
+
+    //Se valida si existe el objeto de ubicacion. 
+    if(!estadoArchivos.includes(estadoArchivos[indiceArchivo])){
+        //Se inserta un objeto al arreglo de los Archivos 
+        estadoArchivos.push(
+            {
+                id: ubicacion,
+                archivoPdfAbierto: false,
+                archivoPdfVentana: window
+            }
+        );
+    }
+
+    //Se almacena el archivo a una variable
+    let archivo = estadoArchivos[indiceArchivo];
+
     //Se valida si la ventana esta cerrada
-    if(archivoPdfVentana.closed !== false) archivoPdfAbierto = false;
+    if(archivo.archivoPdfVentana.closed !== false) archivo.archivoPdfAbierto = false;
     
-    if(!archivoPdfAbierto){
+    if(!archivo.archivoPdfAbierto){
         //Si la ventana esta cerrada, abre una nueva ventana
-        archivoPdfVentana = window.open( ubicacion, "_blank");
-        archivoPdfAbierto = true;
+        archivo.archivoPdfVentana = window.open( ubicacion, "_blank");
+        archivo.archivoPdfAbierto = true;
     }else{
         //Si la ventana esta abierta se hara focus sobre la misma
-        archivoPdfVentana.focus();
+        archivo.archivoPdfVentana.focus();
     }
 
 };

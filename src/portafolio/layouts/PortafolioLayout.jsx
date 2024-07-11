@@ -9,8 +9,6 @@ import clases from "../styles/PortafolioLayout.module.css";
 
 export const PortafolioLayout = ( {children} ) => {
 
-    console.log("Layout redibujado")
-
     return (
         <div className={`${clases.layout}`}>
             <aside className={`${clases.layout__aside}`}>

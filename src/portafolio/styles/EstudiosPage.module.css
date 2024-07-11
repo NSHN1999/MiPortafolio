@@ -69,3 +69,100 @@
     opacity: 0.5;
 }
 
+/*ESTILOS A LOS TITLES Y SUBTITLES*/
+
+.resumen__subHeader{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.resumen__subTitle{
+    font-size: 2.1rem;
+}
+
+.resumen__subTitle::after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 30px;
+    height: 20px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--color-secondary), var(--color-secondary) 1px, transparent 0px, transparent 100%);
+    background-size: 6px 6px;
+    opacity: 0.5;
+}
+
+.title__color{
+    color: var(--color-secondary);
+}
+
+/*ESTILOS LEFT Y RIGHT*/
+
+.resumen__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/*ESTILOS IZQUIERDA*/
+.resumen__left{
+    flex-basis: 58%;
+    margin-right: 1.5rem;
+}
+
+.resumen__timelines{
+    margin-bottom: 5rem;
+}
+
+.timelines__timeline{
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.timeline__header{
+    flex-basis: 30%;
+    text-align: right;
+    padding-right: 2.5rem;
+}
+
+.timeline__year{
+    margin: 0.3rem 0;
+    line-height: 1.9rem;
+    font-size: 1.4rem;
+}
+
+.timeline__company{
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: var(--color-company);
+}
+
+.timeline__divide{
+
+}
+
+.timeline__description{
+    width: 70%;
+    padding-left: 2.5rem;
+    padding-right: 1.5rem;
+}
+
+.timeline__title{
+    font-size: 1.6rem;
+    margin-bottom: 0.3rem;
+}
+
+.timeline__text{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+/*ESTILOS DERECHA*/
+.resumen__right{
+    flex-basis: 41%;
+}
