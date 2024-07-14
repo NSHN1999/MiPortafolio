@@ -142,10 +142,6 @@
     color: var(--color-company);
 }
 
-.timeline__divide{
-
-}
-
 .timeline__description{
     width: 70%;
     padding-left: 2.5rem;
@@ -162,7 +158,189 @@
     margin-bottom: 1rem;
 }
 
+.timeline__divide{
+    position: absolute;
+    left: 30%;
+    top: 0;
+    bottom: -18px;
+    width: 0.1rem;
+    background-color: var(--color-secondary);
+}
+
+.timeline__divide::before{
+    position: absolute;
+    margin-top: 0.4rem;
+    margin-left: -0.8rem;
+    content: "";
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: var(--color-secondary);
+    border-radius: 10rem;
+    opacity: 0.25;
+}
+
+.timeline__divide::after{
+    position: absolute;
+    content: "";
+    margin-top: 0.8rem;
+    margin-left: -0.4rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: var(--color-principal);
+    border-radius: 10rem;
+    border: 2px solid var(--color-secondary);
+    opacity: 1;
+}
+
 /*ESTILOS DERECHA*/
 .resumen__right{
     flex-basis: 41%;
+    padding: 0 1.5rem;
+}
+
+.resumen__skills{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.skills__title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__text{
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.4rem;
+}
+
+.skills__number{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.4rem;
+    color: var(--color-subtitle);
+}
+
+.skills__progressbar{
+    height: 1rem;
+    border: 1px solid var(--color-secondary);
+    border-radius: 1rem;
+    background-color: var(--color-principal);
+    margin-bottom: 1.5rem;
+}
+
+.skills__porcentaje{
+    height: 0.8rem;
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-principal);
+    border-radius: 1rem;
+}
+
+.skills__porcentajeP1{
+    width: 90%;
+}
+
+.skills__porcentajeP2{
+    width: 40%;
+}
+
+.skills__porcentajeP3{
+    width: 80%;
+}
+
+.skills__porcentajeP4{
+    width: 90%;
+}
+
+.skills__porcentajeP5{
+    width: 60%;
+}
+
+.knowledges__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.knowledges__option{
+    padding: 0.4rem 1rem;
+    margin: 0.3rem;
+    background-color: var(--color-secondary);
+    border-radius: 0.3rem;
+    color: var(--color-principal);
+    font-size: 1.3rem;
+    transition: 100ms;
+    cursor: default;
+}
+
+.knowledges__option:hover{
+    transform: scale(1.01);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+/*RESUMEN CERTIFICADOS*/
+
+.certificates__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.certificates__certificate{
+    height: 15rem;
+    flex-basis: calc(50% - 1.5rem);
+    border-radius: 0.8rem;
+    overflow: hidden;
+
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: row;
+    transition: ease-in 50ms;
+}
+
+.certificates__certificate:hover{
+    cursor: pointer;
+    transform: scale(0.95);
+    background-color: #CECACA;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.6);
+}
+
+.certificates__certificate:active{
+    background-color: var(--color-principal);
+}
+
+.certificate__logo{
+    flex-basis: 30%;
+    background-color: var(--color-background-certificate);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificate__img{
+    width: 15rem;
+    height: 100%;
+}
+
+.certificate__content{
+    padding: 1.5rem 2rem;
+}
+
+.certificate__title{
+    font-size: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+.certificate__id{
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 1.3rem;
+    color: var(--color-subtitle);
+}
+
+.certificate__Fecha{
+    font-size: 1rem;
+    color: var(--color-subtitle);
+    opacity: 0.8;
 }

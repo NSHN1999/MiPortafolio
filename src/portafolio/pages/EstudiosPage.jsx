@@ -52,23 +52,23 @@ export const EstudiosPage = () => {
                             <span className={`${clases.skills__number}`}>90%</span>
                         </article>
                         <div className={`${clases.skills__progressbar}`}>
-                            <div className={`${clases.skills__porcentaje}`}></div>
+                            <div className={`${clases.skills__porcentaje} ${clases.skills__porcentajeP1}`}></div>
                         </div>
 
                         <article className={`${clases.skills__title}`}>
                             <h4 className={`${clases.skills__text}`}>JavaScript</h4>
-                            <span className={`${clases.skills__number}`}>80%</span>
+                            <span className={`${clases.skills__number}`}>40%</span>
                         </article>
                         <div className={`${clases.skills__progressbar}`}>
-                            <div className={`${clases.skills__porcentaje}`}></div>
+                            <div className={`${clases.skills__porcentaje} ${clases.skills__porcentajeP2}`}></div>
                         </div>
 
                         <article className={`${clases.skills__title}`}>
                             <h4 className={`${clases.skills__text}`}>PL/SQL</h4>
-                            <span className={`${clases.skills__number}`}>90%</span>
+                            <span className={`${clases.skills__number}`}>80%</span>
                         </article>
                         <div className={`${clases.skills__progressbar}`}>
-                            <div className={`${clases.skills__porcentaje}`}></div>
+                            <div className={`${clases.skills__porcentaje} ${clases.skills__porcentajeP3}`}></div>
                         </div>
                     </div>
 
@@ -83,7 +83,7 @@ export const EstudiosPage = () => {
                             <span className={`${clases.skills__number}`}>90%</span>
                         </article>
                         <div className={`${clases.skills__progressbar}`}>
-                            <div className={`${clases.skills__porcentaje}`}></div>
+                            <div className={`${clases.skills__porcentaje} ${clases.skills__porcentajeP4}`}></div>
                         </div>
 
                         <article className={`${clases.skills__title}`}>
@@ -91,7 +91,7 @@ export const EstudiosPage = () => {
                             <span className={`${clases.skills__number}`}>60%</span>
                         </article>
                         <div className={`${clases.skills__progressbar}`}>
-                            <div className={`${clases.skills__porcentaje}`}></div>
+                            <div className={`${clases.skills__porcentaje} ${clases.skills__porcentajeP5}`}></div>
                         </div>
                     </div>
 
@@ -100,26 +100,16 @@ export const EstudiosPage = () => {
                     </header>
 
                     <div className={`${clases.resumen__knowledges}`}>
-                        <ul className={`${clases.knowleges__list}`}>
+                        <ul className={`${clases.knowledges__list}`}>
                             <li className={`${clases.knowledges__option}`}>Programación</li>
-                        </ul>
-                        <ul className={`${clases.knowleges__list}`}>
                             <li className={`${clases.knowledges__option}`}>Desarrollo Web</li>
-                        </ul>
-                        <ul className={`${clases.knowleges__list}`}>
                             <li className={`${clases.knowledges__option}`}>Diseño Web</li>
-                        </ul>
-                        <ul className={`${clases.knowleges__list}`}>
+                            <li className={`${clases.knowledges__option}`}>Ingles intermedio</li>
                             <li className={`${clases.knowledges__option}`}>Modelamiento de BDD</li>
-                        </ul>
-                        <ul className={`${clases.knowleges__list}`}>
+                            <li className={`${clases.knowledges__option}`}>GitHub</li>
                             <li className={`${clases.knowledges__option}`}>Consultas de BDD</li>
-                        </ul>
-                        <ul className={`${clases.knowleges__list}`}>
                             <li className={`${clases.knowledges__option}`}>Programación de BDD</li>
-                        </ul>
-                        <ul className={`${clases.knowleges__list}`}>
-                            <li className={`${clases.knowledges__option}`}>Excel nivel Intermedio</li>
+                            <li className={`${clases.knowledges__option}`}>Excel</li>
                         </ul>
                     </div>
                 </section>
@@ -132,9 +122,13 @@ export const EstudiosPage = () => {
                 </header>
 
                 <section className={`${clases.certificates__container}`}>
-                    <article className={`${clases.certificates__certificate}`}>
+
+                    <article 
+                        className={`${clases.certificates__certificate}`}
+                        onClick={() => handleArchivoPdf("/assets/pdfs/CertificadoModuloDuocUC.pdf")}
+                    >
                         <div className={`${clases.certificate__logo}`}>
-                            <button onClick={() => handleArchivoPdf("/assets/pdfs/CertificadoModuloDuocUC.pdf")}><img src="#" className={`${clases.certificate__img}`}/></button>
+                            <img src="/assets/img/LogoDuocUc.jpg" className={`${clases.certificate__img}`}/>
                         </div>
                         <div className={`${clases.certificate__content}`}>
                             <h4 className={`${clases.certificate__title}`}>Modulo DuocUC</h4>
@@ -143,9 +137,12 @@ export const EstudiosPage = () => {
                         </div>
                     </article>
 
-                    <article className={`${clases.certificates__certificate}`}>
+                    <article 
+                        className={`${clases.certificates__certificate}`}
+                        onClick={() => handleArchivoPdf("/assets/pdfs/CertificadoPracticaProfesional.pdf")}
+                    >
                         <div className={`${clases.certificate__logo}`}>
-                            <button onClick={() => handleArchivoPdf("/assets/pdfs/CertificadoPracticaProfesional.pdf")}><img src="#" className={`${clases.certificate__img}`}/></button>
+                            <img src="/assets/img/LogoDuocUc.jpg" className={`${clases.certificate__img}`}/>
                         </div>
                         <div className={`${clases.certificate__content}`}>
                             <h4 className={`${clases.certificate__title}`}>Practica Profesional DuocUC</h4>
@@ -154,12 +151,15 @@ export const EstudiosPage = () => {
                         </div>
                     </article>
 
-                    <article className={`${clases.certificates__certificate}`}>
+                    <article 
+                        className={`${clases.certificates__certificate}`}
+                        onClick={() => handleArchivoPdf("/assets/pdfs/CertificadoUdemy.pdf")}
+                    >
                         <div className={`${clases.certificate__logo}`}>
-                            <button onClick={() => handleArchivoPdf("/assets/pdfs/CertificadoUdemy.pdf")}><img src="#" className={`${clases.certificate__img}`}/></button>
+                            <img src="/assets/img/LogoUdemy.png" className={`${clases.certificate__img}`}/>
                         </div>
                         <div className={`${clases.certificate__content}`}>
-                            <h4 className={`${clases.certificate__title}`}>Aprende JavaScript ES9, HTML, CSS3 y NodeJS</h4>
+                            <h4 className={`${clases.certificate__title}`}>Aprende JavaScript, HTML, CSS3 y NodeJS</h4>
                             <span className={`${clases.certificate__id}`}>Udemy</span>
                             <span className={`${clases.certificate__fecha}`}>1 Febrero 2023</span>
                         </div>

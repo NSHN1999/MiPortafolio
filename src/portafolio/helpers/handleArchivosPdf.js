@@ -13,7 +13,7 @@ export const handleArchivoPdf = ( ubicacion ) => {
         //Se inserta un objeto al arreglo de los Archivos 
         estadoArchivos.push(
             {
-                id: ubicacion,
+                id: indiceArchivo,
                 archivoPdfAbierto: false,
                 archivoPdfVentana: window
             }
@@ -22,7 +22,7 @@ export const handleArchivoPdf = ( ubicacion ) => {
 
     //Se almacena el archivo a una variable
     let archivo = estadoArchivos[indiceArchivo];
-
+    console.log(archivo)
     //Se valida si la ventana esta cerrada
     if(archivo.archivoPdfVentana.closed !== false) archivo.archivoPdfAbierto = false;
     
