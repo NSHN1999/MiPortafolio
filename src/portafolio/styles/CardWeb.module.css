@@ -1,0 +1,40 @@
+
+.galeria__card{
+    position: relative;
+    flex-basis: 32%;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.galeria__galeriaImagen{
+    transition: all 200ms ease-in-out;
+    overflow: hidden;
+}
+
+.galeria__galeriaImagen:hover{
+    transform: scale(1.1);
+}
+
+.galeria__link{
+    height: 100%;
+}
+
+.galeria__imagen{
+    width: 100%;
+    object-fit: cover;
+}
+
+.galeria__title{
+    font-size: 1.6rem;
+    padding: 1.5rem 0;
+    font-weight: bold;
+}
+
+.card__descripcion{
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
