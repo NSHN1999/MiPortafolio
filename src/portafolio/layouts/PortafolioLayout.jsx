@@ -1,6 +1,7 @@
-//IMPORTACIONES ICONOS FONTAWESOME
+//IMPORTACIONES DE DEPENDENCIASnpm install framer-motion
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import PropTypes from 'prop-types';
 //iMPORTACIONES LOCALES
 import { MenuNavegacion } from "../components";
 import { handleArchivoPdf } from "../helpers";
@@ -80,10 +81,12 @@ export const PortafolioLayout = ( {children} ) => {
             </aside>
 
             <main className={`${clases.layout__content}`}>
-
                 {children}
-                
             </main>
         </div>
     );
 };
+
+PortafolioLayout.propTypes = {
+    children: PropTypes.node.isRequired
+}

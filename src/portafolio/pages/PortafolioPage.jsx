@@ -1,8 +1,8 @@
 //IMPORTACIONES DE DEPENDENCIAS
 import { useState } from "react";
+import { motion } from "framer-motion";
 //IMPORTACIONES DE ARCHIVOS LOCALES
 import { ListCategorias } from "../components/ListCategorias";
-import "../helpers/handleButtonActive";
 //ESTILOS
 import clases from "../styles/PortafolioPage.module.css"
 
@@ -11,7 +11,11 @@ export const PortafolioPage = () => {
     const [ categoria, setCategoria ] = useState('Todo');
 
     return (
-        <section className={`${clases.content__page} ${clases.content__portafolio}`}>
+        <motion.section  
+            className={`${clases.content__page} ${clases.content__portafolio}`}
+            initial={{ scale: 0.5 }}
+            animate={{ scale: 1 }}
+        >
 
             <header className={`${clases.portafolio__header}`}>
                 <h1 className={`${clases.header__title}`}>Portafolio</h1>
@@ -56,6 +60,6 @@ export const PortafolioPage = () => {
             
             <ListCategorias categoria={categoria}/>
             
-        </section>
+        </motion.section >
     );
 };

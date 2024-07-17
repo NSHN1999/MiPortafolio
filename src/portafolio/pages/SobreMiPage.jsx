@@ -1,5 +1,7 @@
+//IMPORTACIONES DE DEPENDENCIAS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faComputer } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 //ESTILOS
 import "../styles/Scroll.css";
 import clases from "../styles/SobreMi.module.css";
@@ -7,7 +9,11 @@ import clases from "../styles/SobreMi.module.css";
 export const SobreMiPage = () => {
 
     return (
-        <section className={`${clases.content__page} ${clases.content__about}`}>
+        <motion.section  
+            className={`${clases.content__page} ${clases.content__about}`}
+            initial={{ scale: 0.5 }}
+            animate={{ scale: 1 }}
+        >
 
             <header className={`${clases.about__header}`}>
                 <h2 className={`${clases.about__title}`}> Sobre <span className={`${clases.title__color}`}>Mi</span></h2>
@@ -78,17 +84,17 @@ export const SobreMiPage = () => {
                         <div className={`${clases.service__content}`}>
                             <h4 className={`${clases.service__title}`}>Desarrollo Web</h4>
                             <p className={`${clases.service__description}`}>
-                                Se maquetar y crear interfaces de usuario intuitivas y dinamicas. Me gusta 
-                                animar las webs y crear diseños llamativos. Siempre organizo
-                                mis archivos y que la lectura de mi codigo sea lo mas clara posible.
-                                Actualemnte me encuentro desarrollando en ReactJS y utizo CSS puro o
-                                de vez en cuando Talwind.
+                                Maquetación y creación interfaces de usuario intuitivas y dinamicas. Me gusta 
+                                animar las webs y crear diseños interactivos. Mantengo mis archivos bien
+                                organizados y siempre estoy limpiando y refactorizndo mi codigo.
+                                Actualmente me encuentro desarrollando en ReactJS con CSS y
+                                de vez en cuando Tailwind.
                             </p>
                         </div>
                     </article>
                 </div>
             </section>
             
-        </section>
+        </motion.section >
     );
 };

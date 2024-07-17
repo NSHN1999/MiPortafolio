@@ -1,3 +1,6 @@
+//IMPORTACIONES DE DEPENDENCIAS
+import { motion } from "framer-motion";
+//IMPORTACIONES DE ARCHIVOS LOCALES
 import { handleArchivoPdf } from "../helpers";
 /*ESTILOS*/
 import clases from "../styles/EstudiosPage.module.css";
@@ -5,7 +8,11 @@ import clases from "../styles/EstudiosPage.module.css";
 export const EstudiosPage = () => {
 
     return (
-        <section className={`${clases.content__page} ${clases.content__estudios}`}>
+        <motion.section 
+            className={`${clases.content__page} ${clases.content__estudios}`}
+            initial={{ scale: 0.5 }}
+            animate={{ scale: 1 }}
+        >
 
             <header className={`${clases.estudios__header}`}>
                 <h1 className={`${clases.header__title}`}>Curriculum</h1>
@@ -166,6 +173,6 @@ export const EstudiosPage = () => {
                     </article>
                 </section>
             </div>
-        </section>
+        </motion.section >
     );
 };
