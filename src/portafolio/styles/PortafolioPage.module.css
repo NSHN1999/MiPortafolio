@@ -88,11 +88,6 @@
     opacity: 0.7;
 }
 
-.portafolio__optionActive{
-    opacity: 1;
-    font-weight: bold;
-}
-
 .portafolio__btn{
     cursor: pointer;
     transition: 100ms;

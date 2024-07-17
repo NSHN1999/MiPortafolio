@@ -23,7 +23,7 @@ export const PortafolioPage = () => {
 
             <nav className={`${clases.portafolio__navbar}`}>
                 <ul className={`${clases.portafolio__menu}`}>
-                    <li className={`${clases.portafolio__option} ${clases.portafolio__optionActive}`}>
+                    <li className={`${clases.portafolio__option}`}>
                         <a 
                             className={`${clases.portafolio__btn}`}
                             onClick={() => setCategoria('Todo')}
