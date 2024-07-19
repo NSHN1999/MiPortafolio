@@ -36,7 +36,6 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.8);
     font-size: 1.3rem;
-    font-weight: 200;
     bottom: -100%;
     transition: 200ms;
     cursor: pointer;
@@ -46,11 +45,13 @@
     display: block;
     padding: 1rem;
     color: white;
+    font-weight: 400;
 }
 
 .galeria__descripcion{
     padding: 1rem;
-    color: white;
+    color: var(--color-secondary);
+    font-weight: 300;
 }
 
 .galeria__galeriaImagen:hover .card__descripcion{
@@ -64,6 +65,7 @@
 .galeria__title{
     flex-basis: 32%;
     font-size: 1.7rem;
+    line-height: 1.7rem;
     padding: 1.5rem 0;
     font-weight: bold;
     text-align: center;

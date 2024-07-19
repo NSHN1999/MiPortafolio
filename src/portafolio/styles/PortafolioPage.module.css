@@ -98,3 +98,8 @@
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
     opacity: 0.9;
 }
+
+.active{
+    font-weight: 600;
+    opacity: 1;
+}

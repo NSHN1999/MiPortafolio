@@ -33,9 +33,9 @@ export const CardWeb = ( {id, categoria, nombre, link, descripcion} ) => {
 };
 
 CardWeb.propTypes = {
-    id: PropTypes.string,
-    categoria: PropTypes.array,
-    nombre: PropTypes.string,
-    link: PropTypes.string,
-    descripcion: PropTypes.string,
+    id: PropTypes.string.isRequired,
+    categoria: PropTypes.array.isRequired,
+    nombre: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
+    descripcion: PropTypes.string.isRequired,
 };
