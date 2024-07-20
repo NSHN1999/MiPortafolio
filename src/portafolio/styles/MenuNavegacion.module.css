@@ -78,3 +78,9 @@
         transform: scale(1);
     }
 }
+
+@media ( max-width: 1060px){
+    .layout__menu{
+        position: static;
+    }
+}

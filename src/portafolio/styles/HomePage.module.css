@@ -20,3 +20,11 @@
     font-weight: normal;
     color: var(--color-subtitle);
 }
+
+@media ( max-width: 1060px){
+    
+    .content__page{
+        border-radius: 0;
+        height: 100vh;
+    }   
+}

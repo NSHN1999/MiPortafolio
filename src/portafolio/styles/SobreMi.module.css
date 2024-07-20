@@ -160,3 +160,34 @@
     font-size: 1.5rem;
     text-align: justify;
 }
+
+@media ( max-width: 1060px){
+    
+    .content__page{
+        border-radius: 0px;
+        height: 100vh;
+    }   
+}
+
+@media ( max-width: 585px){
+
+    .about__personalInfo{
+        flex-direction: column;
+    }
+
+    .personalInfo__data{
+        flex-basis: 100%;
+        margin-top: 2rem;
+        padding: 0;
+    }
+
+    .services__container{
+        flex-direction: column;
+    }
+
+    .services__service{
+        margin-right: 0;
+        margin-bottom: 3rem;
+        flex-basis: 100%;
+    }
+}

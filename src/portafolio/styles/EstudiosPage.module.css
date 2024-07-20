@@ -311,7 +311,6 @@
 }
 
 .certificate__logo{
-    flex-basis: 30%;
     background-color: var(--color-background-certificate);
     display: flex;
     justify-content: center;
@@ -343,4 +342,40 @@
     font-size: 1rem;
     color: var(--color-subtitle);
     opacity: 0.8;
+}
+
+@media ( max-width: 1160px){
+    .certificates__certificate{
+        flex-basis: 100%;
+    }
+}
+
+@media ( max-width: 1060px){
+    
+    .content__page{
+        border-radius: 0;
+        height: 100vh;
+    }   
+
+    .certificate__logo{
+        justify-content: start;
+        align-items: center;
+    }
+}
+
+@media ( max-width: 585px){
+
+    .resumen__container{
+        flex-direction: column;
+    }
+
+    .resumen__left{
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+
+    .resumen__right{
+        padding: 0;
+        margin-bottom: 3rem;
+    }
 }
