@@ -19,7 +19,7 @@ export const PortafolioLayout = ( {children} ) => {
                     <div className={`${clases.userInfo__general}`}>
                         <div className={`${clases.userInfo__containerImagen}`}>
                             <img 
-                                src="/public/assets/img/images.jpg"
+                                src="/assets/img/images.jpg"
                                 className={`${clases.userInfo__image}`}
                                 alt="Foto de perfil del Usuario"
                             />
@@ -69,7 +69,7 @@ export const PortafolioLayout = ( {children} ) => {
                         onClick={() => handleArchivoPdf("/assets/pdfs/CVNicolasHernandez.pdf")} 
                         className={`${clases.userInfo__buttons}`}
                     >
-                        <a href="#" className={`${clases.userInfo__btn}`}>Descargar CV</a>
+                        <a className={`${clases.userInfo__btn}`}>Descargar CV</a>
                     </div>
 
                     {/**Footer */}

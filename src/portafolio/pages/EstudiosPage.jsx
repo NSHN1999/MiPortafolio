@@ -163,7 +163,7 @@ export const EstudiosPage = () => {
                         onClick={() => handleArchivoPdf("/assets/pdfs/CertificadoUdemy.pdf")}
                     >
                         <div className={`${clases.certificate__logo}`}>
-                            <img src="/assets/img/LogoUdemy.png" className={`${clases.certificate__img}`}/>
+                            <img src="/assets/img/LogoUdemy.jpg" className={`${clases.certificate__img}`}/>
                         </div>
                         <div className={`${clases.certificate__content}`}>
                             <h4 className={`${clases.certificate__title}`}>Aprende JavaScript, HTML, CSS3 y NodeJS</h4>
