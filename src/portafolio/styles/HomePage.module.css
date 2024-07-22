@@ -28,3 +28,13 @@
         height: 100vh;
     }   
 }
+
+@media ( max-width: 480px){
+
+    .page__name{
+        font-size: 4rem;
+        line-height: 5.6rem;
+        text-align: center;
+    }
+
+}
