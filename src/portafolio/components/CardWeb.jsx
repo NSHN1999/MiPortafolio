@@ -16,7 +16,7 @@ export const CardWeb = ( {id, categoria, nombre, link, descripcion} ) => {
 
             <div className={`${clases.galeria__galeriaImagen}`}>
                 <a href={`${ link }`} className={`${clases.galeria__link}`} target="_blank">
-                    <img src={`/assets/img/${id}.jpg`} className={`${clases.galeria__imagen}`} alt={ id }/>
+                    <img src={`/assets/img/${id}.webp`} className={`${clases.galeria__imagen}`} alt={ id }/>
                 
                     <article className={`${clases.card__descripcion}`}>
                         <span className={`${clases.galeria__categoria}`}>{ categoria[0] }</span>

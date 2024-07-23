@@ -76,3 +76,21 @@
         flex-basis: 45%;
     }
 }
+
+@media ( max-width: 480px){
+
+    .galeria__card{
+        height: 15rem;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    .galeria__galeriaImagen{
+        flex-basis: 70%;
+    }
+
+    .galeria__title{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+}

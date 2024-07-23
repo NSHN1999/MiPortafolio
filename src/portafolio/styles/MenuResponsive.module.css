@@ -20,10 +20,10 @@
         font-size: 2.5rem;
         border-radius: 3rem;
         cursor: pointer;
-        transition: 400ms ease-in-out;
+        transition: 400ms;
         z-index: 3;
         transform-style: preserve-3d;
-        perspective: 8rem;
+        perspective: 5rem;
         perspective-origin: 50% 50%;
         border: solid 0.2rem var(--color-principal);
     }
