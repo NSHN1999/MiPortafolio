@@ -38,7 +38,7 @@ export const EstudiosPage = () => {
                             <div className={`${clases.timeline__description}`}>
                                 <h3 className={`${clases.timeline__title}`}>Analista Programador</h3>
                                 <p className={`${clases.timeline__text}`}>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque facere maiores ut animi quibusdam enim ad quo asperiores possimus inventore, maxime mollitia.
+                                    Estudiante de Ing. Informatica con solicitud de salida intermedia como Analista Programador.
                                 </p>
                             </div>
                         </article>
