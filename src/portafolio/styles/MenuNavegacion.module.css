@@ -80,7 +80,43 @@
 }
 
 @media ( max-width: 1060px){
+
     .layout__menu{
         position: static;
+        margin: 2rem 0;
     }
+
+    .menu__list{
+        position: static;
+        width: 100%;
+        background-color: var(--color-secondary);
+        box-shadow: none;
+        margin-left: 0;
+        min-height: auto;
+    }
+
+    .menu__icon{
+        display: none;
+    }
+
+    .menu__link{
+        text-decoration: none;
+        display: block;
+        padding: 1.2rem 0;
+    }
+
+    .menu__overlay{
+        position: static;
+        opacity: 0.7;
+        margin-top: 0;
+        padding: 0;
+        box-shadow: none;
+        font-size: 1.6rem;
+    }
+
+    .active .menu__overlay{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
 }

@@ -1,0 +1,57 @@
+.layout__menuToggle{
+    display: none;
+}
+
+@media ( max-width: 1060px ){
+
+    .layout__menuToggle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 4.8rem;
+        height: 4.8rem;
+        overflow: hidden;
+        background-color: var(--color-secondary);
+        color: var(--color-principal);
+        font-size: 2.5rem;
+        border-radius: 3rem;
+        cursor: pointer;
+        transition: 400ms;
+        z-index: 3;
+        transform-style: preserve-3d;
+        perspective: 8rem;
+        perspective-origin: 50% 50%;
+        border: solid 0.2rem var(--color-principal);
+    }
+
+    .menuToggle__cara{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 200ms;
+    }
+
+    .menuToggle__cruz{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        transition: 200ms;
+    }
+
+    .active__ocultar{
+        transition-delay: 100ms;
+    }
+
+    .active__mostrar{
+        transform: rotateY(90deg);
+    }
+
+    .active__menuOcultar{
+        transform: rotateY(180deg);      
+    }
+}

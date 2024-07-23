@@ -3,16 +3,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import PropTypes from 'prop-types';
 //iMPORTACIONES LOCALES
-import { MenuNavegacion } from "../components";
+import { MenuNavegacion, MenuResponsive } from "../components";
 import { handleArchivoPdf } from "../helpers";
 //ESTILOS
 import clases from "../styles/PortafolioLayout.module.css";
+import { useState } from "react";
 
 export const PortafolioLayout = ( {children} ) => {
 
+    const [ showMenu, setShowMenu ] = useState(false);
+
+    const handleShowMenu = () => {
+        setShowMenu(!showMenu)
+        console.log(showMenu)
+    };
+
     return (
         <div className={`${clases.layout}`}>
-            <aside className={`${clases.layout__aside}`}>
+            <aside className={`${clases.layout__aside} ${ showMenu ? clases.layout__asideVisible : clases.layout__asideOculto}`}>
                 <section className={`${clases.aside__userInfo}`}>
 
                     {/**Información del usuario */}
@@ -29,7 +37,9 @@ export const PortafolioLayout = ( {children} ) => {
                     </div>
 
                     {/**Menu de navegación */}
-                    <MenuNavegacion/>
+                    <MenuNavegacion
+                        handleShowMenu={ handleShowMenu }
+                    />
 
                     {/**Links a redes sociales */}
                     <div className={`${clases.userInfo__userLinks}`}>
@@ -79,6 +89,13 @@ export const PortafolioLayout = ( {children} ) => {
 
                 </section>
             </aside>
+
+
+            {/**MENU RESPONSIVE */}
+            <MenuResponsive 
+                showMenu={ showMenu }
+                handleShowMenu={ handleShowMenu }
+            />
 
             <main className={`${clases.layout__content}`}>
                 {children}

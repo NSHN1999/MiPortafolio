@@ -224,7 +224,18 @@ body{
     }
 
     .layout__aside{
-        display: none;
+        display: block;
+        position: absolute;
+        max-width: 33rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 0;
+        text-align: center;
+        overflow: auto;
+        transition: all 200ms ease-in-out;
+        z-index: 1;
+        opacity: 1;
     }
 
     .layout__content{
@@ -232,5 +243,38 @@ body{
         height: 100vh;
         border-radius: 0;
         background-color: transparent;
+    }
+
+    .userInfo__containerImagen{
+        width: 13rem;
+        height: 13rem;
+        margin-top: 3rem;
+        display: inline-block;
+    }
+
+    .userInfo__name{
+        font-size: 2.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .userLinks__social{
+        margin-top: 0;
+    }
+
+    .userInfo__footer{
+        position: static;
+        padding-bottom: 2rem;
+    }
+
+    .layout__asideVisible{
+        margin-right: 0;
+        opacity: 1;
+        width: 100%;
+    }
+
+    .layout__asideOculto{
+        margin-right: -100%;
+        opacity: 0;
     }
 }

@@ -1,17 +1,20 @@
 //IMPORTACION DE ICONOS 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faEnvelope, faGraduationCap, faHouse, faUser } from "@fortawesome/free-solid-svg-icons";
+import PropTypes from "prop-types"
 //IMPORTACION REACT-ROUTER
 import { NavLink } from 'react-router-dom';
 //ESTILOS
 import clases from "../styles/MenuNavegacion.module.css";
 
-export const MenuNavegacion = () => {
+export const MenuNavegacion = ( { handleShowMenu }) => {
+
     return (
         <nav className={`${clases.layout__menu}`}>
             <ul className={`${clases.menu__list}`}>
                 <li className={`${clases.menu__option}`}>
                     <NavLink 
+                        onClick={ handleShowMenu }
                         to="/portafolio/home" 
                         className={({isActive}) => `${clases.menu__link} ${isActive ? clases.active : ''}`}
                     >
@@ -21,6 +24,7 @@ export const MenuNavegacion = () => {
                 </li>
                 <li className={`${clases.menu__option}`}>
                     <NavLink 
+                        onClick={ handleShowMenu }
                         to="/portafolio/sobremi" 
                         className={({isActive}) => `${clases.menu__link} ${isActive ? clases.active : ''}`}
                     >
@@ -30,6 +34,7 @@ export const MenuNavegacion = () => {
                 </li>
                 <li className={`${clases.menu__option}`}>
                     <NavLink 
+                        onClick={ handleShowMenu }
                         to="/portafolio/estudios" 
                         className={({isActive}) => `${clases.menu__link} ${isActive ? clases.active : ''}`}
                     >
@@ -39,6 +44,7 @@ export const MenuNavegacion = () => {
                 </li>
                 <li className={`${clases.menu__option}`}>
                     <NavLink
+                        onClick={ handleShowMenu }
                         to="/portafolio/folio" 
                         className={({isActive}) => `${clases.menu__link} ${isActive ? clases.active : ''}`}
                     >
@@ -48,6 +54,7 @@ export const MenuNavegacion = () => {
                 </li>
                 <li className={`${clases.menu__option}`}>
                     <NavLink 
+                        onClick={ handleShowMenu }
                         to="/portafolio/contacto" 
                         className={({isActive}) => `${clases.menu__link} ${isActive ? clases.active : ''}`}
                     >
@@ -59,3 +66,7 @@ export const MenuNavegacion = () => {
         </nav>
     );
 };
+
+MenuNavegacion.propTypes = {
+    handleShowMenu: PropTypes.func.isRequired,
+}
