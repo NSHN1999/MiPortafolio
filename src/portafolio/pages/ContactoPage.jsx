@@ -9,6 +9,8 @@ import clases from "../styles/ContactoPage.module.css";
 
 export const ContactoPage = () => {
 
+
+
     return (
         <motion.section  
             className={`${clases.content__page} ${clases.content__contacto}`}
@@ -52,19 +54,40 @@ export const ContactoPage = () => {
                         <h3 className={`${clases.formHeader__subtitle}`}>¿Como puedo <span className={`${clases.subtitle__color}`}>ayudarte</span>?</h3>
                     </header>
 
-                    <form className={`${clases.contacto__form}`}>
+                    <form 
+                        action="https://formsubmit.co/9e2e4db98958b184bdf300248c42d29e" 
+                        method="POST"
+                        className={`${clases.contacto__form}`}
+                    >
                         <div className={`${clases.form__container}`}>
                             <section className={`${clases.form__left}`}>
                                 <div className={`${clases.form__group}`}>
-                                    <input type="text" className={`${clases.form__input}`} name="name" required placeholder="Nombre"/>
+                                    <input 
+                                        type="text" 
+                                        className={`${clases.form__input}`} 
+                                        name="name" 
+                                        required 
+                                        placeholder="Nombre"
+                                    />
                                     <label htmlFor="name" className={`${clases.form__label}`}>Nombre</label>
                                 </div>
                                 <div className={`${clases.form__group}`}>
-                                    <input type="email" className={`${clases.form__input}`} name="email" required placeholder="Email"/>
+                                    <input 
+                                        type="email" 
+                                        className={`${clases.form__input}`} 
+                                        name="email" 
+                                        required 
+                                        placeholder="Email"
+                                    />
                                     <label htmlFor="email" className={`${clases.form__label}`}>Email</label>
                                 </div>
                                 <div className={`${clases.form__group}`}>
-                                    <input type="text" className={`${clases.form__input}`} name="asunto" required placeholder="Asunto"/>
+                                    <input 
+                                        type="text" 
+                                        className={`${clases.form__input}`} 
+                                        name="asunto" required 
+                                        placeholder="Asunto"
+                                    />
                                     <label htmlFor="asunto" className={`${clases.form__label}`}>Asunto</label>
                                 </div>
                             </section>
@@ -79,7 +102,9 @@ export const ContactoPage = () => {
                         </div>    
                         
                         <input type="submit" className={`${clases.form__button}`} value="Enviar Mensaje"/>
-                        
+
+                        <input type="hidden" name="_next" value="https://folionicolashernandez.netlify.app//"/>
+                        <input type="hidden" name="_captcha" value={false}/>
                     </form>
                 </section>
 

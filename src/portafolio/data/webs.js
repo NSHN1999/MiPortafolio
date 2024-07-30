@@ -9,7 +9,7 @@ export const webs = [
         'id': 'web-gifsexpertapp',
         'categoria': ['Cursos', 'Todo'],
         'nombre': 'GifsExpertApp',
-        'link': 'https://nshn1999.github.io/GifsApp-react/',
+        'link': 'https://gif-expert-nicodev.netlify.app',
         'descripcion': 'Aplicación de practica desarrollada en curso de ReactJS.',
     },
     {
