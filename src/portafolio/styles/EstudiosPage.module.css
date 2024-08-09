@@ -365,6 +365,10 @@
 
 @media ( max-width: 585px){
 
+    .content__estudios{
+        padding: 4rem;
+    }
+
     .resumen__container{
         flex-direction: column;
     }

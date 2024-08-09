@@ -27,7 +27,7 @@ export const PortafolioLayout = ( {children} ) => {
                     <div className={`${clases.userInfo__general}`}>
                         <div className={`${clases.userInfo__containerImagen}`}>
                             <img 
-                                src="/assets/img/images.webp"
+                                src="/assets/img/foto_perfil.webp"
                                 className={`${clases.userInfo__image}`}
                                 alt="Foto de perfil del Usuario"
                             />

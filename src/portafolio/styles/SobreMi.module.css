@@ -191,3 +191,10 @@
         flex-basis: 100%;
     }
 }
+
+@media ( max-width: 480px ){
+
+    .content__about{
+        padding: 4rem;
+    }
+}

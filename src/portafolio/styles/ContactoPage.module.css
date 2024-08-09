@@ -262,6 +262,10 @@
 
 @media ( max-width: 480px){
 
+    .content__contacto{
+        padding: 4rem;
+    }
+
     .form__container{
         flex-direction: column;
     }
