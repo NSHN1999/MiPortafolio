@@ -8,9 +8,9 @@ export const webs = [
     {
         'id': 'web-gifsexpertapp',
         'categoria': ['Cursos', 'Todo'],
-        'nombre': 'GifsExpertApp',
+        'nombre': 'Gifs App',
         'link': 'https://gif-expert-nicodev.netlify.app',
-        'descripcion': 'Aplicación de practica desarrollada en curso de ReactJS.',
+        'descripcion': 'Aplicación para buscar y compartir gifs',
     },
     {
         'id': 'web-victorllaves',
@@ -22,8 +22,15 @@ export const webs = [
     {
         'id': 'web-dogsapp',
         'categoria': ['Practicas', 'Todo'],
-        'nombre': 'DoggApp',
+        'nombre': 'Dogg App',
         'link': 'https://nshn1999.github.io/DoggApp/',
-        'descripcion': 'Prueba técnica para puesto como Desarrollador Front-Ent con ReactJS.',
+        'descripcion': 'Aplicacion para buscar razas de perros.',
+    },
+    {
+        'id': 'web-heroesApp',
+        'categoria': ['Practicas', 'Todo'],
+        'nombre': 'Heroes App',
+        'link': 'https://coruscating-froyo-19230a.netlify.app',
+        'descripcion': 'Aplicación de bsuqeuda de heroes',
     },
 ];
