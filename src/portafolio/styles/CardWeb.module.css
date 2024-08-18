@@ -91,6 +91,7 @@
 @media ( max-width: 480px){
 
     .galeria__card{
+        flex-basis: calc(50% - 1rem);
         height: 15rem;
         border-radius: 1rem;
         overflow: hidden;
