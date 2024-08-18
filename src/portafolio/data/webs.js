@@ -20,17 +20,17 @@ export const webs = [
         'descripcion': 'Landing Page de cerrajeria VictorLlaves, proyecto en proceso.',
     },
     {
-        'id': 'web-dogsapp',
+        'id': 'web-razasdogs',
         'categoria': ['Practicas', 'Todo'],
-        'nombre': 'Dogg App',
-        'link': 'https://nshn1999.github.io/DoggApp/',
-        'descripcion': 'Aplicacion para buscar razas de perros.',
+        'nombre': 'Razas de Perritos',
+        'link': 'https://stirring-klepon-2bb771.netlify.app',
+        'descripcion': 'Aplicación para buscar imagenes de razas.',
     },
     {
         'id': 'web-heroesApp',
         'categoria': ['Practicas', 'Todo'],
         'nombre': 'Heroes App',
         'link': 'https://coruscating-froyo-19230a.netlify.app',
-        'descripcion': 'Aplicación de bsuqeuda de heroes',
+        'descripcion': 'Aplicación de busqueda de heroes.',
     },
 ];
